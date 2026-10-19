@@ -1,0 +1,4252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Embedded"
+      name = "Embedded">
+      <Group
+         location = "group:../WolfMQTT"
+         name = "WolfMQTT">
+         <Group
+            location = "group:wolfmqtt"
+            name = "wolfmqtt">
+            <FileRef
+               location = "group:options.h.in">
+            </FileRef>
+            <FileRef
+               location = "group:vs_settings.h">
+            </FileRef>
+            <FileRef
+               location = "group:version.h">
+            </FileRef>
+            <FileRef
+               location = "group:mqtt_socket.h">
+            </FileRef>
+            <FileRef
+               location = "group:version.h.in">
+            </FileRef>
+            <FileRef
+               location = "group:mqtt_types.h">
+            </FileRef>
+            <FileRef
+               location = "group:mqtt_packet.h">
+            </FileRef>
+            <FileRef
+               location = "group:options.h">
+            </FileRef>
+            <FileRef
+               location = "group:visibility.h">
+            </FileRef>
+            <FileRef
+               location = "group:mqtt_client.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:configure.ac">
+         </FileRef>
+         <FileRef
+            location = "group:CMakeLists.txt">
+         </FileRef>
+         <FileRef
+            location = "group:LICENSE">
+         </FileRef>
+         <FileRef
+            location = "group:commit-tests.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile.am">
+         </FileRef>
+         <FileRef
+            location = "group:README.md">
+         </FileRef>
+         <FileRef
+            location = "group:pre-commit.sh">
+         </FileRef>
+         <FileRef
+            location = "group:WolfMQTT.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:autogen.sh">
+         </FileRef>
+         <Group
+            location = "group:src"
+            name = "src">
+            <FileRef
+               location = "group:mqtt_client.c">
+            </FileRef>
+            <FileRef
+               location = "group:mqtt_socket.c">
+            </FileRef>
+            <FileRef
+               location = "group:mqtt_packet.c">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:../WolfSSL"
+         name = "WolfSSL">
+         <FileRef
+            location = "group:CMakeLists.txt">
+         </FileRef>
+         <Group
+            location = "group:wolfssl-3.11.0-stable"
+            name = "wolfssl-3.11.0-stable">
+            <Group
+               location = "group:IDE"
+               name = "IDE">
+               <Group
+                  location = "group:MDK5-ARM"
+                  name = "MDK5-ARM">
+                  <Group
+                     location = "group:Inc"
+                     name = "Inc">
+                     <FileRef
+                        location = "group:wolfssl_MDK_ARM.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Projects"
+                     name = "Projects">
+                     <Group
+                        location = "group:SimpleClient"
+                        name = "SimpleClient">
+                        <FileRef
+                           location = "group:Abstract.txt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:SimpleClient.uvoptx">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <FileRef
+                           location = "group:time-CortexM3-4.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:simpleClient.uvprojx">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:CryptBenchmark"
+                        name = "CryptBenchmark">
+                        <FileRef
+                           location = "group:CryptBenchmark.uvprojx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Abstract.txt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <FileRef
+                           location = "group:time-CortexM3-4.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CryptBenchmark.uvoptx">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:EchoClient"
+                        name = "EchoClient">
+                        <FileRef
+                           location = "group:EchoClient.uvoptx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:EchoClient.uvprojx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Abstract.txt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                     </Group>
+                     <Group
+                        location = "group:SimpleServer"
+                        name = "SimpleServer">
+                        <FileRef
+                           location = "group:Abstract.txt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <FileRef
+                           location = "group:SimpleServer.uvoptx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:SimpleServer.uvprojx">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:CryptTest"
+                        name = "CryptTest">
+                        <FileRef
+                           location = "group:Abstract.txt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <FileRef
+                           location = "group:CryptTest.uvprojx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:CryptTest.uvoptx">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:EchoServer"
+                        name = "EchoServer">
+                        <FileRef
+                           location = "group:EchoServer.uvoptx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:EchoServer.uvprojx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Abstract.txt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                     </Group>
+                     <Group
+                        location = "group:wolfSSL-Lib"
+                        name = "wolfSSL-Lib">
+                        <FileRef
+                           location = "group:wolfSSL-Lib.uvoptx">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <FileRef
+                           location = "group:wolfSSL-Lib.uvprojx">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:wolfSSL-Full"
+                        name = "wolfSSL-Full">
+                        <FileRef
+                           location = "group:wolfsslFull.uvprojx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfsslFull.uvoptx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Abstract.txt">
+                        </FileRef>
+                        <FileRef
+                           location = "group:shell.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <Group
+                           location = "group:RTE"
+                           name = "RTE">
+                           <Group
+                              location = "group:wolfSSL"
+                              name = "wolfSSL">
+                              <FileRef
+                                 location = "group:user_settings.h">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <FileRef
+                           location = "group:time-CortexM3-4.c">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <Group
+                     location = "group:Conf"
+                     name = "Conf">
+                     <FileRef
+                        location = "group:user_settings.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Src"
+                     name = "Src">
+                     <FileRef
+                        location = "group:ssl-dummy.c">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:WIN"
+                  name = "WIN">
+                  <FileRef
+                     location = "group:wolfssl-fips.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:user_settings.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:README.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl-fips.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:test.vcxproj">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:MDK-ARM"
+                  name = "MDK-ARM">
+                  <Group
+                     location = "group:MDK-ARM"
+                     name = "MDK-ARM">
+                     <Group
+                        location = "group:wolfSSL"
+                        name = "wolfSSL">
+                        <FileRef
+                           location = "group:cert_data.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfssl_MDK_ARM.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:shell.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:time-dummy.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:main.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:cert_data.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:time-CortexM3-4.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfssl_MDK_ARM.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Retarget.c">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <Group
+                     location = "group:LPC43xx"
+                     name = "LPC43xx">
+                     <FileRef
+                        location = "group:time-LCP43xx.c">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:STM32F2xx_StdPeriph_Lib"
+                     name = "STM32F2xx_StdPeriph_Lib">
+                     <FileRef
+                        location = "group:time-STM32F2xx.c">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:IAR-EWARM"
+                  name = "IAR-EWARM">
+                  <Group
+                     location = "group:Projects"
+                     name = "Projects">
+                     <Group
+                        location = "group:benchmark"
+                        name = "benchmark">
+                        <FileRef
+                           location = "group:current_time.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfCrypt-benchmark.ewd">
+                        </FileRef>
+                        <FileRef
+                           location = "group:benchmark-main.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfCrypt-benchmark.ewp">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:test"
+                        name = "test">
+                        <FileRef
+                           location = "group:wolfCrypt-test.ewd">
+                        </FileRef>
+                        <FileRef
+                           location = "group:test-main.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfCrypt-test.ewp">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:common"
+                        name = "common">
+                        <FileRef
+                           location = "group:wolfssl.icf">
+                        </FileRef>
+                        <FileRef
+                           location = "group:minimum-startup.c">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:user_settings.h">
+                     </FileRef>
+                     <Group
+                        location = "group:lib"
+                        name = "lib">
+                        <FileRef
+                           location = "group:wolfSSL-Lib.ewp">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfSSL-Lib.ewd">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:wolfssl.eww">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:README">
+                  </FileRef>
+                  <Group
+                     location = "group:embOS"
+                     name = "embOS">
+                     <FileRef
+                        location = "group:README">
+                     </FileRef>
+                     <Group
+                        location = "group:custom_port"
+                        name = "custom_port">
+                        <Group
+                           location = "group:custom_port_Linker_Script"
+                           name = "custom_port_Linker_Script">
+                           <FileRef
+                              location = "group:samv71q21_wolfssl.icf">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:wolfcrypt_test_custom_port"
+                           name = "wolfcrypt_test_custom_port">
+                           <Group
+                              location = "group:Application"
+                              name = "Application">
+                              <FileRef
+                                 location = "group:runWolfcryptTests.c">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <Group
+                           location = "group:custom_port_user_settings"
+                           name = "custom_port_user_settings">
+                           <FileRef
+                              location = "group:user_settings.h">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:wolfcrypt_benchmark_custom_port"
+                           name = "wolfcrypt_benchmark_custom_port">
+                           <Group
+                              location = "group:Application"
+                              name = "Application">
+                              <FileRef
+                                 location = "group:runBenchmarks.c">
+                              </FileRef>
+                           </Group>
+                        </Group>
+                        <FileRef
+                           location = "group:README_custom_port">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:SAMV71_XULT"
+                        name = "SAMV71_XULT">
+                        <Group
+                           location = "group:embOS_SAMV71_XULT_user_settings"
+                           name = "embOS_SAMV71_XULT_user_settings">
+                           <FileRef
+                              location = "group:user_settings_simple_example.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:user_settings_verbose_example.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:user_settings.h">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:embOS_SAMV71_XULT_Linker_Script"
+                           name = "embOS_SAMV71_XULT_Linker_Script">
+                           <FileRef
+                              location = "group:samv71q21_wolfssl.icf">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:embOS_wolfcrypt_test_SAMV71_XULT"
+                           name = "embOS_wolfcrypt_test_SAMV71_XULT">
+                           <Group
+                              location = "group:settings"
+                              name = "settings">
+                              <FileRef
+                                 location = "group:wolfcrypt_test_Debug.jlink">
+                              </FileRef>
+                           </Group>
+                           <FileRef
+                              location = "group:wolfcrypt_test.ewt">
+                           </FileRef>
+                           <FileRef
+                              location = "group:README_wolfcrypt_test">
+                           </FileRef>
+                           <Group
+                              location = "group:Application"
+                              name = "Application">
+                              <FileRef
+                                 location = "group:runWolfcryptTests.c">
+                              </FileRef>
+                           </Group>
+                           <FileRef
+                              location = "group:wolfcrypt_test.ewp">
+                           </FileRef>
+                           <FileRef
+                              location = "group:wolfcrypt_test.ewd">
+                           </FileRef>
+                        </Group>
+                        <FileRef
+                           location = "group:README_SAMV71">
+                        </FileRef>
+                        <Group
+                           location = "group:embOS_wolfcrypt_benchmark_SAMV71_XULT"
+                           name = "embOS_wolfcrypt_benchmark_SAMV71_XULT">
+                           <Group
+                              location = "group:settings"
+                              name = "settings">
+                              <FileRef
+                                 location = "group:wolfcrypt_benchmark_Debug.jlink">
+                              </FileRef>
+                           </Group>
+                           <FileRef
+                              location = "group:README_wolfcrypt_benchmark">
+                           </FileRef>
+                           <FileRef
+                              location = "group:wolfcrypt_benchmark.ewp">
+                           </FileRef>
+                           <FileRef
+                              location = "group:wolfcrypt_benchmark.ewd">
+                           </FileRef>
+                           <Group
+                              location = "group:Application"
+                              name = "Application">
+                              <FileRef
+                                 location = "group:runBenchmarks.c">
+                              </FileRef>
+                           </Group>
+                           <FileRef
+                              location = "group:wolfcrypt_benchmark.ewt">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:embOS_wolfcrypt_lib_SAMV71_XULT"
+                           name = "embOS_wolfcrypt_lib_SAMV71_XULT">
+                           <FileRef
+                              location = "group:README_wolfcrypt_lib">
+                           </FileRef>
+                           <FileRef
+                              location = "group:wolfcrypt_lib.ewt">
+                           </FileRef>
+                           <FileRef
+                              location = "group:wolfcrypt_lib.ewd">
+                           </FileRef>
+                           <FileRef
+                              location = "group:wolfcrypt_lib.ewp">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                     <Group
+                        location = "group:extract_trial_here"
+                        name = "extract_trial_here">
+                        <FileRef
+                           location = "group:README_extract_trial_here">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:WIN-SGX"
+                  name = "WIN-SGX">
+                  <FileRef
+                     location = "group:wolfSSL_SGX.edl">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfSSL_SGX.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfSSL_SGX.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfSSL_SGX.vcxproj.filters">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ReadMe.txt">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:iOS"
+                  name = "iOS">
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:README.md">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl_testsuite.xcodeproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:user_settings.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl-FIPS.xcodeproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl.xcodeproj">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <Group
+                  location = "group:INTIME-RTOS"
+                  name = "INTIME-RTOS">
+                  <FileRef
+                     location = "group:wolfExamples.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfExamples.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfExamples.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:README.md">
+                  </FileRef>
+                  <FileRef
+                     location = "group:libwolfssl.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:libwolfssl.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:user_settings.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfExamples.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:ARDUINO"
+                  name = "ARDUINO">
+                  <Group
+                     location = "group:sketches"
+                     name = "sketches">
+                     <Group
+                        location = "group:wolfssl_client"
+                        name = "wolfssl_client">
+                        <FileRef
+                           location = "group:wolfssl_client.ino">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:wolfssl-arduino.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:README.md">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:WORKBENCH"
+                  name = "WORKBENCH">
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:README.md">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:MYSQL"
+                  name = "MYSQL">
+                  <FileRef
+                     location = "group:do.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CMakeLists_wolfSSL.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:CMakeLists_wolfCrypt.txt">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:ROWLEY-CROSSWORKS-ARM"
+                  name = "ROWLEY-CROSSWORKS-ARM">
+                  <FileRef
+                     location = "group:wolfssl_ltc.hzp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:README.md">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arm_startup.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:user_settings.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hw.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl.hzp">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Kinetis_FlashPlacement.xml">
+                  </FileRef>
+                  <FileRef
+                     location = "group:retarget.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:test_main.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:benchmark_main.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:kinetis_hw.c">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:HEXIWEAR"
+                  name = "HEXIWEAR">
+                  <Group
+                     location = "group:wolfSSL_HW"
+                     name = "wolfSSL_HW">
+                     <FileRef
+                        location = "group:user_settings.h">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:LPCXPRESSO"
+                  name = "LPCXPRESSO">
+                  <Group
+                     location = "group:lib_wolfssl"
+                     name = "lib_wolfssl">
+                     <FileRef
+                        location = "group:user_settings.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:lpc_18xx_port.c">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:wolf_example"
+                     name = "wolf_example">
+                     <FileRef
+                        location = "group:readme.txt">
+                     </FileRef>
+                     <Group
+                        location = "group:src"
+                        name = "src">
+                        <FileRef
+                           location = "group:lpc_18xx_startup.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:wolfssl_example.c">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:README.md">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:ctaocrypt"
+               name = "ctaocrypt">
+               <FileRef
+                  location = "group:ctaocrypt.sln">
+               </FileRef>
+               <FileRef
+                  location = "group:ctaocrypt.vcproj">
+               </FileRef>
+               <Group
+                  location = "group:src"
+                  name = "src">
+                  <FileRef
+                     location = "group:aes.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hmac.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:random.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_last.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des3.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha256.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_first.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:misc.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha512.c">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:stamp-h.in">
+            </FileRef>
+            <FileRef
+               location = "group:valgrind-error.sh">
+            </FileRef>
+            <FileRef
+               location = "group:INSTALL">
+            </FileRef>
+            <Group
+               location = "group:swig"
+               name = "swig">
+               <FileRef
+                  location = "group:pbkdf_pkcs12.py">
+               </FileRef>
+               <FileRef
+                  location = "group:runme.py">
+               </FileRef>
+               <FileRef
+                  location = "group:pbkdf_pkcs12_test.py">
+               </FileRef>
+               <FileRef
+                  location = "group:python_wolfssl.vcproj">
+               </FileRef>
+               <FileRef
+                  location = "group:wolfssl.i">
+               </FileRef>
+               <FileRef
+                  location = "group:README">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:PythonBuild.sh">
+               </FileRef>
+               <FileRef
+                  location = "group:rsasign.py">
+               </FileRef>
+               <FileRef
+                  location = "group:wolfssl_adds.c">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:wnr-example.conf">
+            </FileRef>
+            <FileRef
+               location = "group:fips-check.sh">
+            </FileRef>
+            <Group
+               location = "group:mcapi"
+               name = "mcapi">
+               <Group
+                  location = "group:wolfcrypt_mcapi.X"
+                  name = "wolfcrypt_mcapi.X">
+                  <Group
+                     location = "group:nbproject"
+                     name = "nbproject">
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:project.xml">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:zlib.X"
+                  name = "zlib.X">
+                  <Group
+                     location = "group:nbproject"
+                     name = "nbproject">
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:project.xml">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:crypto.h">
+               </FileRef>
+               <FileRef
+                  location = "group:README">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <Group
+                  location = "group:wolfcrypt_test.X"
+                  name = "wolfcrypt_test.X">
+                  <Group
+                     location = "group:nbproject"
+                     name = "nbproject">
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:project.xml">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:mcapi_test.c">
+               </FileRef>
+               <FileRef
+                  location = "group:PIC32MZ-serial.h">
+               </FileRef>
+               <Group
+                  location = "group:wolfssl.X"
+                  name = "wolfssl.X">
+                  <Group
+                     location = "group:nbproject"
+                     name = "nbproject">
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:project.xml">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:crypto.c">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:wrapper"
+               name = "wrapper">
+               <Group
+                  location = "group:python"
+                  name = "python">
+                  <Group
+                     location = "group:wolfcrypt"
+                     name = "wolfcrypt">
+                     <Group
+                        location = "group:test"
+                        name = "test">
+                        <FileRef
+                           location = "group:test_ciphers.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:test_hashes.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:test_random.py">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:requirements-testing.txt">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MANIFEST.in">
+                     </FileRef>
+                     <Group
+                        location = "group:docs"
+                        name = "docs">
+                        <FileRef
+                           location = "group:index.rst">
+                        </FileRef>
+                        <FileRef
+                           location = "group:asymmetric.rst">
+                        </FileRef>
+                        <FileRef
+                           location = "group:conf.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:mac.rst">
+                        </FileRef>
+                        <FileRef
+                           location = "group:symmetric.rst">
+                        </FileRef>
+                        <FileRef
+                           location = "group:random.rst">
+                        </FileRef>
+                        <FileRef
+                           location = "group:digest.rst">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <Group
+                        location = "group:wolfcrypt"
+                        name = "wolfcrypt">
+                        <FileRef
+                           location = "group:ciphers.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:build_ffi.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:__init__.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:random.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:utils.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:__about__.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:exceptions.py">
+                        </FileRef>
+                        <FileRef
+                           location = "group:hashes.py">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:setup.py">
+                     </FileRef>
+                     <FileRef
+                        location = "group:tox.ini">
+                     </FileRef>
+                     <FileRef
+                        location = "group:Vagrantfile">
+                     </FileRef>
+                     <FileRef
+                        location = "group:LICENSING.rst">
+                     </FileRef>
+                     <FileRef
+                        location = "group:README.rst">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <Group
+                  location = "group:CSharp"
+                  name = "CSharp">
+                  <FileRef
+                     location = "group:wolfSSL_CSharp.sln">
+                  </FileRef>
+                  <Group
+                     location = "group:wolfSSL-TLS-Server"
+                     name = "wolfSSL-TLS-Server">
+                     <FileRef
+                        location = "group:wolfSSL-TLS-Server.csproj">
+                     </FileRef>
+                     <FileRef
+                        location = "group:wolfSSL-TLS-Server.cs">
+                     </FileRef>
+                     <FileRef
+                        location = "group:App.config">
+                     </FileRef>
+                     <Group
+                        location = "group:Properties"
+                        name = "Properties">
+                        <FileRef
+                           location = "group:AssemblyInfo.cs">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Settings.Designer.cs">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Settings.settings">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <Group
+                     location = "group:wolfSSL-TLS-PSK-Server"
+                     name = "wolfSSL-TLS-PSK-Server">
+                     <FileRef
+                        location = "group:wolfSSL-TLS-PSK-Server.cs">
+                     </FileRef>
+                     <FileRef
+                        location = "group:wolfSSL-TLS-PSK-Server.csproj">
+                     </FileRef>
+                     <FileRef
+                        location = "group:App.config">
+                     </FileRef>
+                     <Group
+                        location = "group:Properties"
+                        name = "Properties">
+                        <FileRef
+                           location = "group:AssemblyInfo.cs">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <Group
+                     location = "group:wolfSSL-DTLS-PSK-Server"
+                     name = "wolfSSL-DTLS-PSK-Server">
+                     <FileRef
+                        location = "group:App.config">
+                     </FileRef>
+                     <Group
+                        location = "group:Properties"
+                        name = "Properties">
+                        <FileRef
+                           location = "group:AssemblyInfo.cs">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:wolfSSL-DTLS-PSK-Server.cs">
+                     </FileRef>
+                     <FileRef
+                        location = "group:wolfSSL-DTLS-PSK-Server.csproj">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:wolfSSL-DTLS-Server"
+                     name = "wolfSSL-DTLS-Server">
+                     <FileRef
+                        location = "group:wolfSSL-DTLS-Server.cs">
+                     </FileRef>
+                     <FileRef
+                        location = "group:App.config">
+                     </FileRef>
+                     <Group
+                        location = "group:Properties"
+                        name = "Properties">
+                        <FileRef
+                           location = "group:AssemblyInfo.cs">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:wolfSSL-DTLS-Server.csproj">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:wolfSSL-Example-IOCallbacks"
+                     name = "wolfSSL-Example-IOCallbacks">
+                     <FileRef
+                        location = "group:App.config">
+                     </FileRef>
+                     <Group
+                        location = "group:Properties"
+                        name = "Properties">
+                        <FileRef
+                           location = "group:AssemblyInfo.cs">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:wolfSSL-Example-IOCallbacks.cs">
+                     </FileRef>
+                     <FileRef
+                        location = "group:wolfSSL-Example-IOCallbacks.csproj">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:wolfSSL_CSharp"
+                     name = "wolfSSL_CSharp">
+                     <FileRef
+                        location = "group:wolfSSL_CSharp.csproj">
+                     </FileRef>
+                     <FileRef
+                        location = "group:wolfSSL.cs">
+                     </FileRef>
+                     <Group
+                        location = "group:Properties"
+                        name = "Properties">
+                        <FileRef
+                           location = "group:AssemblyInfo.cs">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Resources.resx">
+                        </FileRef>
+                        <FileRef
+                           location = "group:Resources.Designer.cs">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:ChangeLog">
+            </FileRef>
+            <FileRef
+               location = "group:AUTHORS">
+            </FileRef>
+            <FileRef
+               location = "group:input">
+            </FileRef>
+            <Group
+               location = "group:testsuite"
+               name = "testsuite">
+               <FileRef
+                  location = "group:testsuite.c">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:testsuite.vcxproj">
+               </FileRef>
+               <FileRef
+                  location = "group:testsuite.sln">
+               </FileRef>
+               <FileRef
+                  location = "group:testsuite-ntru.vcproj">
+               </FileRef>
+               <FileRef
+                  location = "group:testsuite.vcproj">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:pre-push.sh">
+            </FileRef>
+            <Group
+               location = "group:mqx"
+               name = "mqx">
+               <Group
+                  location = "group:wolfcrypt_test"
+                  name = "wolfcrypt_test">
+                  <FileRef
+                     location = "group:wolfcrypt_test_twrk70f120m_Int_Flash_SramData_Debug_JTrace.jlink">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_test_twrk70f120m_Int_Flash_SramData_Release_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_test_twrk70f120m_Int_Flash_SramData_Debug_JTrace.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_test_twrk70f120m_Int_Flash_DDRData_Release_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_test_twrk70f120m_Int_Flash_DDRData_Debug_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <Group
+                     location = "group:Debugger"
+                     name = "Debugger">
+                     <FileRef
+                        location = "group:mass_erase_kinetis.tcl">
+                     </FileRef>
+                     <FileRef
+                        location = "group:K70FN1M0.mem">
+                     </FileRef>
+                     <FileRef
+                        location = "group:init_kinetis.tcl">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:wolfcrypt_test_twrk70f120m_Int_Flash_SramData_Debug_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <Group
+                     location = "group:Sources"
+                     name = "Sources">
+                     <FileRef
+                        location = "group:main.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:main.c">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:README">
+               </FileRef>
+               <Group
+                  location = "group:wolfssl"
+                  name = "wolfssl">
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:wolfcrypt_benchmark"
+                  name = "wolfcrypt_benchmark">
+                  <FileRef
+                     location = "group:wolfcrypt_benchmark_twrk70f120m_Int_Flash_SramData_Debug_JTrace.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_benchmark_twrk70f120m_Int_Flash_DDRData_Release_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_benchmark_twrk70f120m_Int_Flash_DDRData_Debug_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_benchmark_twrk70f120m_Int_Flash_SramData_Debug_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <Group
+                     location = "group:Debugger"
+                     name = "Debugger">
+                     <FileRef
+                        location = "group:mass_erase_kinetis.tcl">
+                     </FileRef>
+                     <FileRef
+                        location = "group:K70FN1M0.mem">
+                     </FileRef>
+                     <FileRef
+                        location = "group:init_kinetis.tcl">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Sources"
+                     name = "Sources">
+                     <FileRef
+                        location = "group:main.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:main.c">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:wolfcrypt_benchmark_twrk70f120m_Int_Flash_SramData_Debug_JTrace.jlink">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfcrypt_benchmark_twrk70f120m_Int_Flash_SramData_Release_PnE_U-MultiLink.launch">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:wolfssl_client"
+                  name = "wolfssl_client">
+                  <FileRef
+                     location = "group:wolfssl_client_twrk70f120m_Int_Flash_SramData_Debug_JTrace.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl_client_twrk70f120m_Int_Flash_SramData_Release_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl_client_twrk70f120m_Int_Flash_DDRData_Debug_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl_client_twrk70f120m_Int_Flash_SramData_Debug_JTrace.jlink">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfssl_client_twrk70f120m_Int_Flash_DDRData_Release_PnE_U-MultiLink.launch">
+                  </FileRef>
+                  <Group
+                     location = "group:Debugger"
+                     name = "Debugger">
+                     <FileRef
+                        location = "group:mass_erase_kinetis.tcl">
+                     </FileRef>
+                     <FileRef
+                        location = "group:K70FN1M0.mem">
+                     </FileRef>
+                     <FileRef
+                        location = "group:init_kinetis.tcl">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Sources"
+                     name = "Sources">
+                     <FileRef
+                        location = "group:main.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:main.c">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:wolfssl_client_twrk70f120m_Int_Flash_SramData_Debug_PnE_U-MultiLink.launch">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:util_lib"
+                  name = "util_lib">
+                  <Group
+                     location = "group:Sources"
+                     name = "Sources">
+                     <FileRef
+                        location = "group:util.c">
+                     </FileRef>
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:util.h">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:commit-tests.sh">
+            </FileRef>
+            <FileRef
+               location = "group:wolfssl-ntru.vcproj">
+            </FileRef>
+            <Group
+               location = "group:tests"
+               name = "tests">
+               <FileRef
+                  location = "group:CONF_FILES_README.md">
+               </FileRef>
+               <FileRef
+                  location = "group:srp.c">
+               </FileRef>
+               <FileRef
+                  location = "group:test.conf">
+               </FileRef>
+               <FileRef
+                  location = "group:api.c">
+               </FileRef>
+               <FileRef
+                  location = "group:test-psk-no-id.conf">
+               </FileRef>
+               <FileRef
+                  location = "group:test-qsh.conf">
+               </FileRef>
+               <FileRef
+                  location = "group:unit.h">
+               </FileRef>
+               <FileRef
+                  location = "group:hash.c">
+               </FileRef>
+               <FileRef
+                  location = "group:README">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:test-sctp.conf">
+               </FileRef>
+               <FileRef
+                  location = "group:test-sig.conf">
+               </FileRef>
+               <FileRef
+                  location = "group:test-dtls.conf">
+               </FileRef>
+               <FileRef
+                  location = "group:unit.c">
+               </FileRef>
+               <FileRef
+                  location = "group:suites.c">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:quit">
+            </FileRef>
+            <FileRef
+               location = "group:wolfssl.vcproj">
+            </FileRef>
+            <Group
+               location = "group:tirtos"
+               name = "tirtos">
+               <FileRef
+                  location = "group:products.mak">
+               </FileRef>
+               <FileRef
+                  location = "group:wolfssl.mak">
+               </FileRef>
+               <FileRef
+                  location = "group:README">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:wolfssl.bld">
+               </FileRef>
+               <Group
+                  location = "group:packages"
+                  name = "packages">
+                  <Group
+                     location = "group:ti"
+                     name = "ti">
+                     <Group
+                        location = "group:net"
+                        name = "net">
+                        <Group
+                           location = "group:wolfssl"
+                           name = "wolfssl">
+                           <FileRef
+                              location = "group:package.xdc">
+                           </FileRef>
+                           <Group
+                              location = "group:tests"
+                              name = "tests">
+                              <Group
+                                 location = "group:EK_TM4C1294XL"
+                                 name = "EK_TM4C1294XL">
+                                 <Group
+                                    location = "group:wolfcrypt"
+                                    name = "wolfcrypt">
+                                    <Group
+                                       location = "group:benchmark"
+                                       name = "benchmark">
+                                       <FileRef
+                                          location = "group:package.bld.hide">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:package.xdc">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:TM4C1294NC.icf">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:main.c">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:benchmark.cfg">
+                                       </FileRef>
+                                    </Group>
+                                    <Group
+                                       location = "group:test"
+                                       name = "test">
+                                       <FileRef
+                                          location = "group:package.bld.hide">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:package.xdc">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:TM4C1294NC.icf">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:test.cfg">
+                                       </FileRef>
+                                       <FileRef
+                                          location = "group:main.c">
+                                       </FileRef>
+                                    </Group>
+                                 </Group>
+                              </Group>
+                           </Group>
+                           <FileRef
+                              location = "group:package.xs">
+                           </FileRef>
+                           <FileRef
+                              location = "group:package.bld">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:cyassl"
+               name = "cyassl">
+               <Group
+                  location = "group:ctaocrypt"
+                  name = "ctaocrypt">
+                  <FileRef
+                     location = "group:md2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:chacha.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:settings.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:settings_comp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des3.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:types.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:misc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mpi_class.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:poly1305.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md5.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arc4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha256.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:coding.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:logging.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:error-crypt.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha512.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs7.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:camellia.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hmac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fips_test.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aes.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blake2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wc_port.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn_public.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compress.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pwdbased.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:memory.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa.h">
+                  </FileRef>
+                  <Group
+                     location = "group:port"
+                     name = "port">
+                     <Group
+                        location = "group:pic32"
+                        name = "pic32">
+                        <FileRef
+                           location = "group:pic32mz-crypt.h">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:ripemd.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visibility.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tfm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:integer.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blake2-impl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rabbit.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blake2-int.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:random.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hc128.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mpi_superclass.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:options.h.in">
+               </FileRef>
+               <FileRef
+                  location = "group:internal.h">
+               </FileRef>
+               <FileRef
+                  location = "group:version.h">
+               </FileRef>
+               <FileRef
+                  location = "group:version.h.in">
+               </FileRef>
+               <FileRef
+                  location = "group:callbacks.h">
+               </FileRef>
+               <FileRef
+                  location = "group:certs_test.h">
+               </FileRef>
+               <FileRef
+                  location = "group:test.h">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer.h">
+               </FileRef>
+               <FileRef
+                  location = "group:ssl.h">
+               </FileRef>
+               <FileRef
+                  location = "group:crl.h">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer_error.rc">
+               </FileRef>
+               <FileRef
+                  location = "group:ocsp.h">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer_error.h">
+               </FileRef>
+               <Group
+                  location = "group:openssl"
+                  name = "openssl">
+                  <FileRef
+                     location = "group:pem.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ossl_typ.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:err.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bn.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:engine.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x509.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn1.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:opensslconf.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bio.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x509v3.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl23.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:conf.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md5.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecdsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs12.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:crypto.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ec25519.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:opensslv.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:evp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hmac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:stack.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocsp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ec.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecdh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rand.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ed25519.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ripemd.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:lhash.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:error-ssl.h">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:wolfssl.sln">
+            </FileRef>
+            <FileRef
+               location = "group:wolfssl-ntru.sln">
+            </FileRef>
+            <FileRef
+               location = "group:README">
+            </FileRef>
+            <FileRef
+               location = "group:Makefile.am">
+            </FileRef>
+            <FileRef
+               location = "group:README.md">
+            </FileRef>
+            <FileRef
+               location = "group:SCRIPTS-LIST">
+            </FileRef>
+            <Group
+               location = "group:wolfcrypt"
+               name = "wolfcrypt">
+               <Group
+                  location = "group:benchmark"
+                  name = "benchmark">
+                  <FileRef
+                     location = "group:benchmark.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:benchmark.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:benchmark.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:benchmark.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:test"
+                  name = "test">
+                  <FileRef
+                     location = "group:test.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:test.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:test.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:test.c">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:user-crypto"
+                  name = "user-crypto">
+                  <Group
+                     location = "group:include"
+                     name = "include">
+                     <FileRef
+                        location = "group:user_rsa.h">
+                     </FileRef>
+                  </Group>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Makefile.am">
+                  </FileRef>
+                  <Group
+                     location = "group:lib"
+                     name = "lib">
+                  </Group>
+                  <FileRef
+                     location = "group:README.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:autogen.sh">
+                  </FileRef>
+                  <Group
+                     location = "group:src"
+                     name = "src">
+                     <FileRef
+                        location = "group:rsa.c">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:src"
+                  name = "src">
+                  <FileRef
+                     location = "group:ecc_fp.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_8.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aes.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_6.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:evp.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_12.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hmac.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md4.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_8.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:srp.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:camellia.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs7.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_6.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:memory.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ed25519.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:chacha20_poly1305.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_48.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pwdbased.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compress.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wc_port.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:curve25519.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tfm.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fe_low_mem.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ripemd.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_28.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_small_set.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecc.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fe_x25519_128.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_32.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_20.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aes_asm.asm">
+                  </FileRef>
+                  <FileRef
+                     location = "group:random.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_17.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_64.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:idea.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hc128.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rabbit.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cmac.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hash.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mont_small.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:integer.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ge_operations.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_24.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aes_asm.s">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_4.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wc_encrypt.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fe_operations.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_4.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_48.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:signature.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_small_set.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:error.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md2.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des3.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:chacha.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blake2b.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_12.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfmath.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_3.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_24.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha256.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_9.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md5.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arc4.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_7.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:poly1305.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_64.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_3.i">
+                  </FileRef>
+                  <Group
+                     location = "group:port"
+                     name = "port">
+                     <Group
+                        location = "group:intel"
+                        name = "intel">
+                        <FileRef
+                           location = "group:README.md">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:nxp"
+                        name = "nxp">
+                        <FileRef
+                           location = "group:ksdk_port.c">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:nrf51.c">
+                     </FileRef>
+                     <Group
+                        location = "group:pic32"
+                        name = "pic32">
+                        <FileRef
+                           location = "group:pic32mz-hash.c">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:cavium"
+                        name = "cavium">
+                        <FileRef
+                           location = "group:README.md">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:arm"
+                        name = "arm">
+                        <FileRef
+                           location = "group:armv8-aes.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:armv8-sha256.c">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:ti"
+                        name = "ti">
+                        <FileRef
+                           location = "group:ti-aes.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ti-hash.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ti-ccm.c">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ti-des3.c">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:atmel"
+                        name = "atmel">
+                        <FileRef
+                           location = "group:README.md">
+                        </FileRef>
+                        <FileRef
+                           location = "group:atmel.c">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:fp_sqr_comba_17.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_9.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:misc.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_32.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_7.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_mul_comba_20.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asm.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs12.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha512.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfevent.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fp_sqr_comba_28.i">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ge_low_mem.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:logging.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:coding.c">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:wolfssl"
+               name = "wolfssl">
+               <FileRef
+                  location = "group:options.h.in">
+               </FileRef>
+               <FileRef
+                  location = "group:internal.h">
+               </FileRef>
+               <FileRef
+                  location = "group:version.h">
+               </FileRef>
+               <FileRef
+                  location = "group:version.h.in">
+               </FileRef>
+               <FileRef
+                  location = "group:callbacks.h">
+               </FileRef>
+               <FileRef
+                  location = "group:certs_test.h">
+               </FileRef>
+               <FileRef
+                  location = "group:test.h">
+               </FileRef>
+               <FileRef
+                  location = "group:options.h">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer.h">
+               </FileRef>
+               <Group
+                  location = "group:wolfcrypt"
+                  name = "wolfcrypt">
+                  <FileRef
+                     location = "group:signature.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fe_operations.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wc_encrypt.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:chacha.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:settings.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des3.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:types.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:misc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mpi_class.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:poly1305.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md5.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arc4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfmath.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha256.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:coding.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:logging.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:error-crypt.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs12.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wolfevent.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha512.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs7.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:srp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:camellia.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mem_track.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hmac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:fips_test.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aes.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blake2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:wc_port.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn_public.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compress.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pwdbased.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:chacha20_poly1305.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:memory.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ed25519.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa.h">
+                  </FileRef>
+                  <Group
+                     location = "group:port"
+                     name = "port">
+                     <Group
+                        location = "group:nxp"
+                        name = "nxp">
+                        <FileRef
+                           location = "group:ksdk_port.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:pic32"
+                        name = "pic32">
+                        <FileRef
+                           location = "group:pic32mz-crypt.h">
+                        </FileRef>
+                     </Group>
+                     <FileRef
+                        location = "group:nrf51.h">
+                     </FileRef>
+                     <Group
+                        location = "group:ti"
+                        name = "ti">
+                        <FileRef
+                           location = "group:ti-hash.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:ti-ccm.h">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:atmel"
+                        name = "atmel">
+                        <FileRef
+                           location = "group:atmel.h">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:ripemd.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:curve25519.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visibility.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tfm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:integer.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blake2-impl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ge_operations.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cmac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rabbit.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hash.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:blake2-int.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:random.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hc128.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:idea.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:mpi_superclass.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:ssl.h">
+               </FileRef>
+               <FileRef
+                  location = "group:crl.h">
+               </FileRef>
+               <FileRef
+                  location = "group:io.h">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer_error.rc">
+               </FileRef>
+               <FileRef
+                  location = "group:ocsp.h">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer_error.h">
+               </FileRef>
+               <Group
+                  location = "group:openssl"
+                  name = "openssl">
+                  <FileRef
+                     location = "group:pem.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ossl_typ.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:err.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bn.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:engine.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x509.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ui.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sha.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:asn1.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:opensslconf.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:bio.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x509v3.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl23.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:conf.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md5.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecdsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:pkcs12.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:crypto.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ec25519.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:opensslv.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ssl.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:evp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:md4.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:hmac.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:aes.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:stack.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:des.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocsp.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ec.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ecdh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rand.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ed25519.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ripemd.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:lhash.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:error-ssl.h">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:COPYING">
+            </FileRef>
+            <FileRef
+               location = "group:wolfssl.vcxproj">
+            </FileRef>
+            <Group
+               location = "group:certs"
+               name = "certs">
+               <FileRef
+                  location = "group:dsaparams.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:gen_revoked.sh">
+               </FileRef>
+               <FileRef
+                  location = "group:ca-key.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-ecc-rsa.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-keyPkcs8.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-ecc-rsa.der">
+               </FileRef>
+               <FileRef
+                  location = "group:ca-key.der">
+               </FileRef>
+               <FileRef
+                  location = "group:server-revoked-cert.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-keyEnc.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-keyPkcs8.der">
+               </FileRef>
+               <Group
+                  location = "group:test"
+                  name = "test">
+                  <FileRef
+                     location = "group:server-duplicate-policy.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh512.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gen-ext-certs.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:expired-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh512.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:expired-ca.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:catalog.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cert-ext-ia.cfg">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cert-ext-ns.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:expired-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cert-ext-nc.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:crit-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cert-ext-ia.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh1024.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh1024.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:digsigku.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:crit-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cert-ext-nc.cfg">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:ecc-keyPkcs8.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:client-ca.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-keyPkcs8Enc.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:wolfssl-website-ca.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:ecc-client-key.der">
+               </FileRef>
+               <Group
+                  location = "group:crl"
+                  name = "crl">
+                  <FileRef
+                     location = "group:eccSrvCRL.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:crl.revoked">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gencrls.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:crl.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:eccCliCRL.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:cliCrl.pem">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:taoCert.txt">
+               </FileRef>
+               <FileRef
+                  location = "group:test-servercert.p12">
+               </FileRef>
+               <FileRef
+                  location = "group:client-ecc-cert.der">
+               </FileRef>
+               <FileRef
+                  location = "group:ecc-keyPkcs8Enc.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:client-cert.der">
+               </FileRef>
+               <FileRef
+                  location = "group:ca-cert.der">
+               </FileRef>
+               <FileRef
+                  location = "group:server-cert-chain.der">
+               </FileRef>
+               <FileRef
+                  location = "group:ca-cert.pem">
+               </FileRef>
+               <Group
+                  location = "group:test-pathlen"
+                  name = "test-pathlen">
+                  <FileRef
+                     location = "group:server-127-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-0-ca.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-1-0-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-0-chain.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-127-chain.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-1-0-ca.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-128-ca.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-1-chain.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-0-1-chain.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-1-0-chain.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-1-ca.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:assemble-chains.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-0-1-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-0-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-1-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-128-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-127-ca.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-0-1-ca.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-128-chain.pem">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:ecc-client-key.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:dsa2048.der">
+               </FileRef>
+               <FileRef
+                  location = "group:client-ecc-cert.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:client-cert.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:server-key.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:client-key.der">
+               </FileRef>
+               <Group
+                  location = "group:renewcerts"
+                  name = "renewcerts">
+                  <FileRef
+                     location = "group:wolfssl.cnf">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:rsa2048.der">
+               </FileRef>
+               <FileRef
+                  location = "group:ecc-key-comp.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:client-key.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-key.der">
+               </FileRef>
+               <FileRef
+                  location = "group:renewcerts.sh">
+               </FileRef>
+               <FileRef
+                  location = "group:server-cert.der">
+               </FileRef>
+               <Group
+                  location = "group:ocsp"
+                  name = "ocsp">
+                  <FileRef
+                     location = "group:server2-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:intermediate3-ca-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server3-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocsp-responder-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:intermediate2-ca-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:intermediate1-ca-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocspd1.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:root-ca-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server1-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server1-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:intermediate1-ca-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocspd0.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:openssl.cnf">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server5-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:intermediate3-ca-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:index2.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:index3.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:intermediate2-ca-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:index1.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:index0.txt">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocspd3.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocspd2.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ocsp-responder-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server4-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server5-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server4-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:renewcerts.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server3-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server2-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:root-ca-key.pem">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:ecc-client-keyPub.der">
+               </FileRef>
+               <FileRef
+                  location = "group:client-keyEnc.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:client-keyPub.der">
+               </FileRef>
+               <Group
+                  location = "group:external"
+                  name = "external">
+                  <FileRef
+                     location = "group:ca-verisign-g5.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ca-globalsign-root-r2.pem">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:server-ecc.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-ecc-comp.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-keyPkcs8Enc12.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:ecc-keyPub.der">
+               </FileRef>
+               <FileRef
+                  location = "group:dh2048.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:dh2048.der">
+               </FileRef>
+               <FileRef
+                  location = "group:server-ecc-comp.der">
+               </FileRef>
+               <FileRef
+                  location = "group:server-revoked-key.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-ecc.der">
+               </FileRef>
+               <FileRef
+                  location = "group:server-keyPkcs8Enc2.pem">
+               </FileRef>
+               <FileRef
+                  location = "group:server-cert.pem">
+               </FileRef>
+               <Group
+                  location = "group:1024"
+                  name = "1024">
+                  <FileRef
+                     location = "group:ca-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ca-key.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa1024.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client-cert.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ca-cert.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ca-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client-cert.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dsa1024.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client-key.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:rsa1024.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client-key.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-key.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-cert.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client-keyPub.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh1024.pem">
+                  </FileRef>
+                  <FileRef
+                     location = "group:dh1024.der">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-cert.pem">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:ecc-client-keyPub.pem">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:NEWS">
+            </FileRef>
+            <Group
+               location = "group:support"
+               name = "support">
+               <FileRef
+                  location = "group:wolfssl.pc">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:wolfssl.pc.in">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:examples"
+               name = "examples">
+               <Group
+                  location = "group:echoclient"
+                  name = "echoclient">
+                  <FileRef
+                     location = "group:echoclient.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoclient.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoclient.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:quit">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoclient-ntru.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoclient.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoclient.vcproj">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:server"
+                  name = "server">
+                  <FileRef
+                     location = "group:server.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:server-ntru.vcproj">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <Group
+                  location = "group:sctp"
+                  name = "sctp">
+                  <FileRef
+                     location = "group:sctp-client.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sctp-server-dtls.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sctp-client-dtls.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sctp-server.c">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:echoserver"
+                  name = "echoserver">
+                  <FileRef
+                     location = "group:echoserver.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoserver.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoserver.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoserver.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoserver-ntru.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:echoserver.sln">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:client"
+                  name = "client">
+                  <FileRef
+                     location = "group:client.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client.vcxproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client.sln">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:client-ntru.vcproj">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:IPP"
+               name = "IPP">
+            </Group>
+            <Group
+               location = "group:scripts"
+               name = "scripts">
+               <FileRef
+                  location = "group:ocsp-stapling.test">
+               </FileRef>
+               <FileRef
+                  location = "group:google.test">
+               </FileRef>
+               <FileRef
+                  location = "group:trusted_peer.test">
+               </FileRef>
+               <FileRef
+                  location = "group:resume.test">
+               </FileRef>
+               <FileRef
+                  location = "group:ocsp-stapling2.test">
+               </FileRef>
+               <FileRef
+                  location = "group:external.test">
+               </FileRef>
+               <FileRef
+                  location = "group:ping.test">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:ocsp.test">
+               </FileRef>
+               <FileRef
+                  location = "group:testsuite.pcap">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer-testsuite.test">
+               </FileRef>
+               <FileRef
+                  location = "group:pkcallbacks.test">
+               </FileRef>
+               <FileRef
+                  location = "group:benchmark.test">
+               </FileRef>
+               <FileRef
+                  location = "group:crl-revoked.test">
+               </FileRef>
+               <FileRef
+                  location = "group:psk.test">
+               </FileRef>
+               <FileRef
+                  location = "group:openssl.test">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:pre-commit.sh">
+            </FileRef>
+            <FileRef
+               location = "group:Vagrantfile">
+            </FileRef>
+            <Group
+               location = "group:lib"
+               name = "lib">
+               <FileRef
+                  location = "group:dummy">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:wolfssl64.sln">
+            </FileRef>
+            <Group
+               location = "group:m4"
+               name = "m4">
+               <FileRef
+                  location = "group:ax_harden_compiler_flags.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_append_to_file.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:visibility.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_check_library.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_am_jobserver.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_append_compile_flags.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:require_canonical.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_debug.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_check_link_flag.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_tls.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_check_compile_flag.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_create_generic_config.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:lib_socket_nsl.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:wolfssl_darwin_clang.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_append_link_flags.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:hexversion.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_compiler_version.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_add_am_macro.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_pthread.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_file_escapes.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_print_to_file.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_am_macros.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_count_cpus.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_append_flag.m4">
+               </FileRef>
+               <FileRef
+                  location = "group:ax_vcs_checkout.m4">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:pull_to_vagrant.sh">
+            </FileRef>
+            <Group
+               location = "group:doc"
+               name = "doc">
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:README.txt">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:LICENSING">
+            </FileRef>
+            <Group
+               location = "group:mplabx"
+               name = "mplabx">
+               <FileRef
+                  location = "group:README">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <Group
+                  location = "group:wolfcrypt_benchmark.X"
+                  name = "wolfcrypt_benchmark.X">
+                  <Group
+                     location = "group:nbproject"
+                     name = "nbproject">
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:project.xml">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:wolfcrypt_test.X"
+                  name = "wolfcrypt_test.X">
+                  <Group
+                     location = "group:nbproject"
+                     name = "nbproject">
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:project.xml">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:PIC32MZ-serial.h">
+               </FileRef>
+               <Group
+                  location = "group:wolfssl.X"
+                  name = "wolfssl.X">
+                  <Group
+                     location = "group:nbproject"
+                     name = "nbproject">
+                     <FileRef
+                        location = "group:include.am">
+                     </FileRef>
+                     <FileRef
+                        location = "group:project.xml">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:test_main.c">
+               </FileRef>
+               <FileRef
+                  location = "group:benchmark_main.c">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:rpm"
+               name = "rpm">
+               <FileRef
+                  location = "group:spec.in">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:sslSniffer"
+               name = "sslSniffer">
+               <Group
+                  location = "group:sslSnifferTest"
+                  name = "sslSnifferTest">
+                  <FileRef
+                     location = "group:snifftest.c">
+                  </FileRef>
+                  <FileRef
+                     location = "group:sslSniffTest.vcproj">
+                  </FileRef>
+                  <FileRef
+                     location = "group:include.am">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:sslSniffer.vcxproj">
+               </FileRef>
+               <FileRef
+                  location = "group:sslSniffer.vcproj">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:autogen.sh">
+            </FileRef>
+            <FileRef
+               location = "group:gencertbuf.pl">
+            </FileRef>
+            <Group
+               location = "group:src"
+               name = "src">
+               <FileRef
+                  location = "group:crl.c">
+               </FileRef>
+               <FileRef
+                  location = "group:ssl.c">
+               </FileRef>
+               <FileRef
+                  location = "group:sniffer.c">
+               </FileRef>
+               <FileRef
+                  location = "group:ocsp.c">
+               </FileRef>
+               <FileRef
+                  location = "group:io.c">
+               </FileRef>
+               <FileRef
+                  location = "group:include.am">
+               </FileRef>
+               <FileRef
+                  location = "group:internal.c">
+               </FileRef>
+               <FileRef
+                  location = "group:keys.c">
+               </FileRef>
+               <FileRef
+                  location = "group:bio.c">
+               </FileRef>
+               <FileRef
+                  location = "group:tls.c">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:CMakeLists.txt">
+      </FileRef>
+      <FileRef
+         location = "group:creates19.bat">
+      </FileRef>
+      <Group
+         location = "group:Includes"
+         name = "Includes">
+         <FileRef
+            location = "group:Socket_Task.h">
+         </FileRef>
+         <FileRef
+            location = "group:Event_Task.h">
+         </FileRef>
+         <FileRef
+            location = "group:Scenes.h">
+         </FileRef>
+         <FileRef
+            location = "group:typedefs.h">
+         </FileRef>
+         <FileRef
+            location = "group:config.h">
+         </FileRef>
+         <FileRef
+            location = "group:RFM100_Tasks.h">
+         </FileRef>
+         <FileRef
+            location = "group:Crc.h">
+         </FileRef>
+         <FileRef
+            location = "group:sysinfo.h">
+         </FileRef>
+         <FileRef
+            location = "group:SceneController.h">
+         </FileRef>
+         <FileRef
+            location = "group:globals.h">
+         </FileRef>
+         <FileRef
+            location = "group:String_Sanitizer.h">
+         </FileRef>
+         <FileRef
+            location = "group:defines.h">
+         </FileRef>
+         <FileRef
+            location = "group:Eliot_REST_Task.h">
+         </FileRef>
+         <FileRef
+            location = "group:common.h">
+         </FileRef>
+         <FileRef
+            location = "group:Mqtt.h">
+         </FileRef>
+         <FileRef
+            location = "group:CC1110_Programmer.h">
+         </FileRef>
+         <FileRef
+            location = "group:onq_endian.h">
+         </FileRef>
+         <FileRef
+            location = "group:Eliot_MQTT_Task.h">
+         </FileRef>
+         <FileRef
+            location = "group:Flash.h">
+         </FileRef>
+         <FileRef
+            location = "group:swap_demo.h">
+         </FileRef>
+         <FileRef
+            location = "group:SSLCertificates.h">
+         </FileRef>
+         <FileRef
+            location = "group:jsr.h">
+         </FileRef>
+         <FileRef
+            location = "group:Eliot_Common.h">
+         </FileRef>
+         <FileRef
+            location = "group:Zones.h">
+         </FileRef>
+         <FileRef
+            location = "group:RTCS.h">
+         </FileRef>
+         <FileRef
+            location = "group:onq_standard_types.h">
+         </FileRef>
+         <FileRef
+            location = "group:I2C.h">
+         </FileRef>
+         <FileRef
+            location = "group:includes.h">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:LCM1-git (clear flash).launch">
+      </FileRef>
+      <Group
+         location = "group:release"
+         name = "release">
+         <FileRef
+            location = "group:LCM1-K64-2015-07-15.s19">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Debugger"
+         name = "Debugger">
+         <FileRef
+            location = "group:creates19.bat">
+         </FileRef>
+         <FileRef
+            location = "group:mass_erase_kinetis.tcl">
+         </FileRef>
+         <FileRef
+            location = "group:init_kinetis.tcl">
+         </FileRef>
+         <FileRef
+            location = "group:MK64FN1M0.mem">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Sources"
+         name = "Sources">
+         <Group
+            location = "group:jansson"
+            name = "jansson">
+            <FileRef
+               location = "group:pack_unpack.c">
+            </FileRef>
+            <FileRef
+               location = "group:jansson_config.h">
+            </FileRef>
+            <FileRef
+               location = "group:memory.c">
+            </FileRef>
+            <FileRef
+               location = "group:strconv.c">
+            </FileRef>
+            <FileRef
+               location = "group:jansson_private.h">
+            </FileRef>
+            <FileRef
+               location = "group:hashtable.h">
+            </FileRef>
+            <FileRef
+               location = "group:utf.h">
+            </FileRef>
+            <FileRef
+               location = "group:strbuffer.c">
+            </FileRef>
+            <FileRef
+               location = "group:dump.c">
+            </FileRef>
+            <FileRef
+               location = "group:error.c">
+            </FileRef>
+            <FileRef
+               location = "group:hashtable.c">
+            </FileRef>
+            <FileRef
+               location = "group:utf.c">
+            </FileRef>
+            <FileRef
+               location = "group:jansson.h">
+            </FileRef>
+            <FileRef
+               location = "group:load.c">
+            </FileRef>
+            <FileRef
+               location = "group:value.c">
+            </FileRef>
+            <FileRef
+               location = "group:strbuffer.h">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:mktfs.bat">
+         </FileRef>
+         <FileRef
+            location = "group:Logging_public.h">
+         </FileRef>
+         <FileRef
+            location = "group:html.h">
+         </FileRef>
+         <FileRef
+            location = "group:Eliot_MQTT_Task.c">
+         </FileRef>
+         <FileRef
+            location = "group:CMakeLists.txt">
+         </FileRef>
+         <FileRef
+            location = "group:USB_File.h">
+         </FileRef>
+         <FileRef
+            location = "group:Flash.c">
+         </FileRef>
+         <FileRef
+            location = "group:cgi_index.c">
+         </FileRef>
+         <FileRef
+            location = "group:Mqtt.c">
+         </FileRef>
+         <FileRef
+            location = "group:CC1110_Programmer.c">
+         </FileRef>
+         <FileRef
+            location = "group:Eliot_Common.c">
+         </FileRef>
+         <FileRef
+            location = "group:jsr.c">
+         </FileRef>
+         <FileRef
+            location = "group:usb_classes.c">
+         </FileRef>
+         <FileRef
+            location = "group:html_util.c">
+         </FileRef>
+         <FileRef
+            location = "group:tfs_data.c">
+         </FileRef>
+         <FileRef
+            location = "group:I2C.c">
+         </FileRef>
+         <FileRef
+            location = "group:Logging_private.h">
+         </FileRef>
+         <FileRef
+            location = "group:USB_Task.h">
+         </FileRef>
+         <FileRef
+            location = "group:RTCS.c">
+         </FileRef>
+         <FileRef
+            location = "group:Zones.c">
+         </FileRef>
+         <Group
+            location = "group:flash"
+            name = "flash">
+            <FileRef
+               location = "group:SetEEEEnable.c">
+            </FileRef>
+            <FileRef
+               location = "group:EERAMGetProtection.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashProgramOnce.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashSecurityBypass.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashReadResource.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashVerifySection.c">
+            </FileRef>
+            <FileRef
+               location = "group:SSD_FTFx_Internal.h">
+            </FileRef>
+            <FileRef
+               location = "group:FlashProgramLongword.c">
+            </FileRef>
+            <FileRef
+               location = "group:EEEWrite.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashGetSecurityState.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashProgramPhrase.c">
+            </FileRef>
+            <FileRef
+               location = "group:DFlashSetProtection.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashCheckSum.c">
+            </FileRef>
+            <FileRef
+               location = "group:PFlashSetProtection.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashInit.c">
+            </FileRef>
+            <FileRef
+               location = "group:SSD_FTFx.h">
+            </FileRef>
+            <FileRef
+               location = "group:FlashVerifyBlock.c">
+            </FileRef>
+            <FileRef
+               location = "group:PFlashGetProtection.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashEraseSuspend.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashGetInterruptEnable.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashProgramSection.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashProgramCheck.c">
+            </FileRef>
+            <FileRef
+               location = "group:SSD_Types.h">
+            </FileRef>
+            <FileRef
+               location = "group:FlashSetInterruptEnable.c">
+            </FileRef>
+            <FileRef
+               location = "group:DFlashGetProtection.c">
+            </FileRef>
+            <FileRef
+               location = "group:PFlashGetSwapStatus.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashEraseAllBlock.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashEraseBlock.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashReadOnce.c">
+            </FileRef>
+            <FileRef
+               location = "group:PFlashSwap.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashVerifyAllBlock.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashCommandSequence.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashEraseSector.c">
+            </FileRef>
+            <FileRef
+               location = "group:DEFlashPartition.c">
+            </FileRef>
+            <FileRef
+               location = "group:FlashEraseResume.c">
+            </FileRef>
+            <FileRef
+               location = "group:EERAMSetProtection.c">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Event_Task.c">
+         </FileRef>
+         <FileRef
+            location = "group:Socket_Task.c">
+         </FileRef>
+         <FileRef
+            location = "group:cgi_netstat.c">
+         </FileRef>
+         <FileRef
+            location = "group:Scenes.c">
+         </FileRef>
+         <FileRef
+            location = "group:USB_File.c">
+         </FileRef>
+         <FileRef
+            location = "group:Tasks.c">
+         </FileRef>
+         <FileRef
+            location = "group:Crc.c">
+         </FileRef>
+         <FileRef
+            location = "group:RFM100_Tasks.c">
+         </FileRef>
+         <FileRef
+            location = "group:usb_classes.h">
+         </FileRef>
+         <FileRef
+            location = "group:Eliot_REST_Task.c">
+         </FileRef>
+         <FileRef
+            location = "group:cgi_hvac.c">
+         </FileRef>
+         <FileRef
+            location = "group:Shell_Task.c">
+         </FileRef>
+         <FileRef
+            location = "group:Logging_Task.c">
+         </FileRef>
+         <FileRef
+            location = "group:String_Sanitizer.c">
+         </FileRef>
+         <FileRef
+            location = "group:cgi.h">
+         </FileRef>
+         <FileRef
+            location = "group:USB_Task.c">
+         </FileRef>
+         <FileRef
+            location = "group:Command_Lists.c">
+         </FileRef>
+         <FileRef
+            location = "group:SceneController.c">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:LCM1-git.launch">
+      </FileRef>
+      <Group
+         location = "container:tools"
+         name = "tools">
+         <Group
+            location = "group:heroku"
+            name = "heroku">
+            <FileRef
+               location = "group:heroku.rsa">
+            </FileRef>
+            <FileRef
+               location = "group:herokuGit.sh">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:cmake"
+            name = "cmake">
+            <FileRef
+               location = "group:armel.cmake">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:mqx"
+            name = "mqx">
+            <FileRef
+               location = "group:prepMQX.sh">
+            </FileRef>
+            <FileRef
+               location = "group:MQX.patch">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:lcm_log_parser"
+            name = "lcm_log_parser">
+            <FileRef
+               location = "group:parse_lcm.sh">
+            </FileRef>
+            <FileRef
+               location = "group:yornq.sh">
+            </FileRef>
+            <FileRef
+               location = "group:lcm_log_filter.sh">
+            </FileRef>
+            <FileRef
+               location = "group:colorize.sh">
+            </FileRef>
+            <FileRef
+               location = "group:check_lcm_leaks.sh">
+            </FileRef>
+            <FileRef
+               location = "group:lcm_colorize.csv">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:createRelease.sh">
+         </FileRef>
+         <FileRef
+            location = "group:gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2">
+         </FileRef>
+         <Group
+            location = "group:gpl"
+            name = "gpl">
+            <FileRef
+               location = "group:prepGPL.sh">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:jenkins"
+            name = "jenkins">
+            <FileRef
+               location = "group:incrementReleaseVersion.sh">
+            </FileRef>
+            <FileRef
+               location = "group:firmwareDeploy.sh">
+            </FileRef>
+            <FileRef
+               location = "group:build.sh">
+            </FileRef>
+            <FileRef
+               location = "group:sizeTest.sh">
+            </FileRef>
+            <FileRef
+               location = "group:deploy.sh">
+            </FileRef>
+            <FileRef
+               location = "group:sizeLimit.txt">
+            </FileRef>
+            <FileRef
+               location = "group:serverDeploy.sh">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:flash_usage.sh">
+         </FileRef>
+         <Group
+            location = "group:PROGACMP"
+            name = "PROGACMP">
+            <FileRef
+               location = "group:lc7001_erase_all_sectors.bat">
+            </FileRef>
+            <FileRef
+               location = "group:lc7001_extract_flash.cfg">
+            </FileRef>
+            <FileRef
+               location = "group:lc7001_program_flash.cfg">
+            </FileRef>
+            <FileRef
+               location = "group:lc7001_transfer_flash.bat">
+            </FileRef>
+            <FileRef
+               location = "group:lc7001_extract_flash.bat">
+            </FileRef>
+            <FileRef
+               location = "group:lc7001_erase_all_sectors.cfg">
+            </FileRef>
+            <FileRef
+               location = "group:README.txt">
+            </FileRef>
+            <FileRef
+               location = "group:lc7001_program_flash.bat">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:s19-converter"
+            name = "s19-converter">
+            <FileRef
+               location = "group:converter.rb">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+</Workspace>

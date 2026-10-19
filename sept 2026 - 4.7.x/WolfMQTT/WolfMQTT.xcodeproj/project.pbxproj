@@ -1,0 +1,162 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		D090BB762C18A1B900726090 /* wolfmqtt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wolfmqtt; sourceTree = "<group>"; };
+		D090BB772C18A1B900726090 /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		D090BB782C18A1B900726090 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		D090BB792C18A1B900726090 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		D090BB7A2C18A1B900726090 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D090BB7B2C18A1B900726090 /* commit-tests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "commit-tests.sh"; sourceTree = "<group>"; };
+		D090BB7C2C18A1B900726090 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		D090BB7D2C18A1B900726090 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D090BB7E2C18A1B900726090 /* .project */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = .project; sourceTree = "<group>"; };
+		D090BB7F2C18A1B900726090 /* pre-commit.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "pre-commit.sh"; sourceTree = "<group>"; };
+		D090BB802C18A1B900726090 /* .cproject */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = .cproject; sourceTree = "<group>"; };
+		D090BB812C18A1B900726090 /* autogen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = autogen.sh; sourceTree = "<group>"; };
+		D090BB822C18A1B900726090 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D090BB702C18A1B900726090 = {
+			isa = PBXGroup;
+			children = (
+				D090BB762C18A1B900726090 /* wolfmqtt */,
+				D090BB772C18A1B900726090 /* configure.ac */,
+				D090BB782C18A1B900726090 /* CMakeLists.txt */,
+				D090BB792C18A1B900726090 /* .DS_Store */,
+				D090BB7A2C18A1B900726090 /* LICENSE */,
+				D090BB7B2C18A1B900726090 /* commit-tests.sh */,
+				D090BB7C2C18A1B900726090 /* Makefile.am */,
+				D090BB7D2C18A1B900726090 /* README.md */,
+				D090BB7E2C18A1B900726090 /* .project */,
+				D090BB7F2C18A1B900726090 /* pre-commit.sh */,
+				D090BB802C18A1B900726090 /* .cproject */,
+				D090BB812C18A1B900726090 /* autogen.sh */,
+				D090BB822C18A1B900726090 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D090BB752C18A1B900726090 /* WolfMQTT */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = D090BB832C18A1B900726090 /* Build configuration list for PBXLegacyTarget "WolfMQTT" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/benjaminkier/Documents/Repos/LCM/WolfMQTT;
+			dependencies = (
+			);
+			name = WolfMQTT;
+			passBuildSettingsInEnvironment = 1;
+			productName = WolfMQTT;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		D090BB712C18A1B900726090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = D090BB742C18A1B900726090 /* Build configuration list for PBXProject "WolfMQTT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D090BB702C18A1B900726090;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D090BB752C18A1B900726090 /* WolfMQTT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		D090BB722C18A1B900726090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		D090BB732C18A1B900726090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		D090BB842C18A1B900726090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = WolfMQTT;
+			};
+			name = Debug;
+		};
+		D090BB852C18A1B900726090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = WolfMQTT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D090BB742C18A1B900726090 /* Build configuration list for PBXProject "WolfMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D090BB722C18A1B900726090 /* Debug */,
+				D090BB732C18A1B900726090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D090BB832C18A1B900726090 /* Build configuration list for PBXLegacyTarget "WolfMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D090BB842C18A1B900726090 /* Debug */,
+				D090BB852C18A1B900726090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D090BB712C18A1B900726090 /* Project object */;
+}

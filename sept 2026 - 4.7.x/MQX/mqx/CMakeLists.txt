@@ -1,0 +1,320 @@
+SET(BSP_LIBRARY_NAME bsp)
+SET(PSP_LIBRARY_NAME psp)
+
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/adc/kadc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/adc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/cm)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/config/twrk64f120m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/dma)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet/macnet)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet/phy)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/esdhc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/flashx/freescale)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/flashx)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/can/flexcan)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/gpio/kgpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/gpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/hwtimer)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c/polled)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/config/common)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/debug)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/io_mem)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/io_null)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pipe)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lpm)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lwadc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lwgpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcb)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcb/mqxa)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pccard)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcflash)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/rtc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sai)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sai/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_esdhc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_spi)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/serial)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/spi)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/tchres)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/tfs)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/timer)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd/polled)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/cpu)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/core/M4)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/compiler/gcc_arm/)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/tad)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/arm-none-eabi/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/lib/gcc/arm-none-eabi/5.2.1/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/lib/gcc/arm-none-eabi/5.2.1/include-fixed)
+
+SET(BSP_SOURCES
+   ${MQX_ROOTDIR}/mqx/source/io/adc/kadc/adc_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/adc/kadc/adc_kadc.c
+   ${MQX_ROOTDIR}/mqx/source/io/adc/kadc/adt_kpdb.c
+   ${MQX_ROOTDIR}/mqx/source/io/adc/adc.c
+   ${MQX_ROOTDIR}/mqx/source/io/cm/cm.c
+   ${MQX_ROOTDIR}/mqx/source/io/dma/edma_kinetis.c
+   ${MQX_ROOTDIR}/mqx/source/io/dma/dma.c
+   ${MQX_ROOTDIR}/mqx/source/io/dma/edma.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/phy/phy_ksz8081.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_init.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_join.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_mii.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_receive.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_rejoin.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_send.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_stop.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_util.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/macnet/macnet_1588.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enaddr.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enclose.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enerr.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/eninit.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enjoin.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enleave.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enmediactl.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enopen.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enrecv.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/ensend.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enstat.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enstop.c
+   ${MQX_ROOTDIR}/mqx/source/io/enet/enutil.c
+   ${MQX_ROOTDIR}/mqx/source/io/esdhc/esdhc_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/esdhc/esdhc.c
+   ${MQX_ROOTDIR}/mqx/source/io/flashx/freescale/flash_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/flashx/freescale/flash_ftfe.c
+   ${MQX_ROOTDIR}/mqx/source/io/flashx/flashx.c
+   ${MQX_ROOTDIR}/mqx/source/io/can/flexcan/flexcan_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/can/flexcan/kflexcan.c
+   ${MQX_ROOTDIR}/mqx/source/io/can/flexcan/kflexcan_int.c
+   ${MQX_ROOTDIR}/mqx/source/io/gpio/kgpio/io_gpio_kgpio.c
+   ${MQX_ROOTDIR}/mqx/source/io/gpio/io_gpio.c
+   ${MQX_ROOTDIR}/mqx/source/io/hwtimer/hwtimer_lpt.c
+   ${MQX_ROOTDIR}/mqx/source/io/hwtimer/hwtimer_kinetis.c
+   ${MQX_ROOTDIR}/mqx/source/io/hwtimer/hwtimer_systick.c
+   ${MQX_ROOTDIR}/mqx/source/io/hwtimer/hwtimer_pit.c
+   ${MQX_ROOTDIR}/mqx/source/io/hwtimer/hwtimer.c
+   ${MQX_ROOTDIR}/mqx/source/io/i2c/i2c_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/i2c/polled/i2c_pol_ki2c.c
+   ${MQX_ROOTDIR}/mqx/source/io/i2c/int/i2c_int_ki2c.c
+   ${MQX_ROOTDIR}/mqx/source/io/i2c/polled/i2c_pol.c
+   ${MQX_ROOTDIR}/mqx/source/io/i2c/int/i2c_int.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/bsp_cm.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_adc.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_cfcard.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_enet.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_esdhc.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_flashx.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_gpio.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_hw.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_i2c.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_iodebug.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_lwadc.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_lpm.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_sai.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_sci.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_sdcard.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_spi.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_tchres.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_usb_dcd.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_usb.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_dma.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/init_bsp.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/mqx_init.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/mqx_main.c
+   ${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m/vectors.c
+   ${MQX_ROOTDIR}/mqx/source/io/debug/iodebug.c
+   ${MQX_ROOTDIR}/mqx/source/io/debug/iodebug_asm.S
+   ${MQX_ROOTDIR}/mqx/source/io/io_mem/io_mem.c
+   ${MQX_ROOTDIR}/mqx/source/io/io_null/io_null.c
+   ${MQX_ROOTDIR}/mqx/source/io/pipe/io_pipe.c
+   ${MQX_ROOTDIR}/mqx/source/io/lpm/lpm_smc.c
+   ${MQX_ROOTDIR}/mqx/source/io/lpm/lpm.c
+   ${MQX_ROOTDIR}/mqx/source/io/lwadc/lwadc_k64.c
+   ${MQX_ROOTDIR}/mqx/source/io/lwadc/lwadc_kadc.c
+   ${MQX_ROOTDIR}/mqx/source/io/lwgpio/lwgpio_kgpio.c
+   ${MQX_ROOTDIR}/mqx/source/io/lwgpio/lwgpio.c
+   ${MQX_ROOTDIR}/mqx/source/io/pcb/io_pcb2.c
+   ${MQX_ROOTDIR}/mqx/source/io/pcb/io_pcb.c
+   ${MQX_ROOTDIR}/mqx/source/io/pcb/iop_inst.c
+   ${MQX_ROOTDIR}/mqx/source/io/pcb/mqxa/pcb_mqxa.c
+   ${MQX_ROOTDIR}/mqx/source/io/pccard/pccardflexbus.c
+   ${MQX_ROOTDIR}/mqx/source/io/pcflash/apcflash.c
+   ${MQX_ROOTDIR}/mqx/source/io/rtc/krtc.c
+   ${MQX_ROOTDIR}/mqx/source/io/sai/sai_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/sai/int/sai_int_ksai.c
+   ${MQX_ROOTDIR}/mqx/source/io/sai/dma/sai_dma_ksai.c
+   ${MQX_ROOTDIR}/mqx/source/io/sai/int/sai_int.c
+   ${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_esdhc/sdcard_esdhc.c
+   ${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_spi/sdcard_spi.c
+   ${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard.c
+   ${MQX_ROOTDIR}/mqx/source/io/serial/serl_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/serial/int/serl_int_kuart.c
+   ${MQX_ROOTDIR}/mqx/source/io/serial/polled/serl_pol_kuart.c
+   ${MQX_ROOTDIR}/mqx/source/io/serial/dma/serl_dma_kuart.c
+   ${MQX_ROOTDIR}/mqx/source/io/serial/io_sinit.c
+   ${MQX_ROOTDIR}/mqx/source/io/serial/polled/serl_pol.c
+   ${MQX_ROOTDIR}/mqx/source/io/serial/int/serl_int.c
+   ${MQX_ROOTDIR}/mqx/source/io/spi/spi_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/spi/spi_dspi_dma.c
+   ${MQX_ROOTDIR}/mqx/source/io/spi/spi_dspi_common.c
+   ${MQX_ROOTDIR}/mqx/source/io/spi/spi.c
+   ${MQX_ROOTDIR}/mqx/source/io/spi/spi_dspi.c
+   ${MQX_ROOTDIR}/mqx/source/io/spi/spi_dspi_common.c
+   ${MQX_ROOTDIR}/mqx/source/io/tchres/tchres.c
+   ${MQX_ROOTDIR}/mqx/source/io/tfs/tfs.c
+   ${MQX_ROOTDIR}/mqx/source/io/timer/timer_qpit.c
+   ${MQX_ROOTDIR}/mqx/source/io/timer/timer_kinetis.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb/usb_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb/usb_mk64_device.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb/usb_install.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb_dcd/usb_dcd_mk64.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb_dcd/polled/usb_dcd_pol_kn.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb_dcd/int/usb_dcd_int_kn.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb_dcd/polled/usb_dcd_pol.c
+   ${MQX_ROOTDIR}/mqx/source/io/usb_dcd/int/usb_dcd_int.c)
+
+SET(PSP_SOURCES
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/kinetis_mpu.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/core/M4/boot.S
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/core/M4/dispatch.S
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/core/M4/support.S
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/int_gkis.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/int_inst.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/int_kisr.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/int_pvta.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/int_unx.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/int_vtab.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/int_xcpt.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/ipsum.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/mem_copy.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/mem_zero.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_dati.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_gelms.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_hoti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_iinit.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_mat1.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_mat2.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_mat3.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_miti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_msti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_mstiq.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_nsti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_psti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_seti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_supp.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tiad.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tida.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tihr.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_timn.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tims.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tinm.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tins.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tiol.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tipr.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tips.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tise.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tisu.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tius.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_tkti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/psp_usti.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/sc_irdyq.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/stack_bu.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/stack_de.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/stack_st.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/cortex.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/nvic.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/event.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_clre.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_dopr.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fclos.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_feof.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_ferr.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fflsh.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fgetc.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fgetl.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fgets.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fopen.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fp.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fprt.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fputc.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fputs.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fscan.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fseek.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fstat.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_ftell.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_fung.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_ioctl.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_misc.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_pntf.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_read.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_scanf.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_scanl.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_spr.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_sscan.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_util.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_vpr.c
+   ${MQX_ROOTDIR}/mqx/source/fio/io_write.c
+   ${MQX_ROOTDIR}/mqx/source/io/io_init.c
+   ${MQX_ROOTDIR}/mqx/source/io/io_inst.c
+   ${MQX_ROOTDIR}/mqx/source/io/io_instx.c
+   ${MQX_ROOTDIR}/mqx/source/io/io_ghand.c
+   ${MQX_ROOTDIR}/mqx/source/io/io_shand.c
+   ${MQX_ROOTDIR}/mqx/source/io/io_uinst.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/ipc.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/idletask.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/inittask.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/int.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/lwsem.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/mem.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/mqx.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/sched.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/task.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/time.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/taskq.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/klog.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/log.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/lwevent.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/lwlog.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/lwmem.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/lwmsgq.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/lwtimer.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/msg.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/msgq.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/msgpool.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/mutex.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/name.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/partition.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/queue.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/sem.c
+   ${MQX_ROOTDIR}/mqx/source/string/strnlen.c
+   ${MQX_ROOTDIR}/mqx/source/string/str_utos.c
+   ${MQX_ROOTDIR}/mqx/source/string/unicode.c
+   ${MQX_ROOTDIR}/mqx/source/tad/tad.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/timer.c
+   ${MQX_ROOTDIR}/mqx/source/kernel/watchdog.c
+   ${MQX_ROOTDIR}/mqx/source/psp/cortex_m/compiler/gcc_arm/comp.c)
+
+ADD_LIBRARY(${BSP_LIBRARY_NAME} STATIC ${BSP_SOURCES})
+ADD_LIBRARY(${PSP_LIBRARY_NAME} STATIC ${PSP_SOURCES})
+
+ADD_CUSTOM_COMMAND(TARGET ${BSP_LIBRARY_NAME}
+   POST_BUILD
+   COMMAND ${MQX_ROOTDIR}/mqx/build/bat/bsp_twrk64f120m.sh ${MQX_ROOTDIR} ${MQX_ROOTDIR}/lib/twrk64f120m.cmake/debug/bsp gcc_arm
+   COMMENT "Copying bsp files")
+
+ADD_CUSTOM_COMMAND(TARGET ${PSP_LIBRARY_NAME}
+   POST_BUILD
+   COMMAND ${MQX_ROOTDIR}/mqx/build/bat/psp_twrk64f120m.sh ${MQX_ROOTDIR} ${MQX_ROOTDIR}/lib/twrk64f120m.cmake/debug/psp gcc_arm
+   COMMENT "Copying psp files")

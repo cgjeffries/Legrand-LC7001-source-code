@@ -1,0 +1,143 @@
+SET(LIBRARY_NAME shell)
+
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/shell/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/adc/kadc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/adc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/cm)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/config/twrk64f120m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/dma)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet/macnet)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet/phy)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/esdhc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/flashx/freescale)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/flashx)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/can/flexcan)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/gpio/kgpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/gpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/hwtimer)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c/polled)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/config/common)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/debug)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/io_mem)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/io_null)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pipe)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lpm)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lwadc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lwgpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcb)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcb/mqxa)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pccard)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcflash)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/rtc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sai)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sai/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_esdhc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_spi)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/serial)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/spi)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/tchres)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/tfs)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/timer)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd/polled)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/cpu)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/core/M4)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/tad)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mfs/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/rtcs/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/device/source/classes/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/common/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/device/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/device/source/include/khci)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/host/khci)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/device/source/include/rtos)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/audio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/cdc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/hid)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/hub)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/msd)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/msd/mfs)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/rtos/mqx)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/phdc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/usb/host/source/classes/printer)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/compiler/gcc_arm/)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/arm-none-eabi/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/lib/gcc/arm-none-eabi/5.2.1/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/lib/gcc/arm-none-eabi/5.2.1/include-fixed)
+
+SET(SOURCES
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_cache.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_cd.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_compare.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_copy.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_create.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_del.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_df.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_di.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_dir.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_dirent.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_disect.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_flush.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_format.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_mkdir.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_pwd.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_read.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_readtest.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_rename.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_rmdir.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_type.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_write.c
+   ${MQX_ROOTDIR}/shell/source/mfs/sh_writetest.c
+   ${MQX_ROOTDIR}/shell/source/mqx/sh_abort.c
+   ${MQX_ROOTDIR}/shell/source/mqx/sh_kill.c
+   ${MQX_ROOTDIR}/shell/source/mqx/sh_pause.c
+   ${MQX_ROOTDIR}/shell/source/mqx/sh_tad.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_arpdisp.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_clock.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_echod.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_eds.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_enet.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_exec.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_ftpc.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_ftpd.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_gate.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_getroute.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_ghbn.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_ipconfig.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_iwconfig.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_load.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_nat.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_nstat.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_ping.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_ppp.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_rtcs.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_sendto.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_smtp.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_snmpd.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_tftp.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_tftpd.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_tnet.c
+   ${MQX_ROOTDIR}/shell/source/rtcs/sh_tnetd.c
+   ${MQX_ROOTDIR}/shell/source/shell/sh_cmdlist.c
+   ${MQX_ROOTDIR}/shell/source/shell/sh_exit.c
+   ${MQX_ROOTDIR}/shell/source/shell/sh_help.c
+   ${MQX_ROOTDIR}/shell/source/shell/sh_sh.c
+   ${MQX_ROOTDIR}/shell/source/shell/sh_util.c
+   ${MQX_ROOTDIR}/shell/source/shell/shell.c)
+
+ADD_LIBRARY(${LIBRARY_NAME} STATIC ${SOURCES})
+
+ADD_CUSTOM_COMMAND(TARGET ${LIBRARY_NAME}
+   POST_BUILD
+   COMMAND ${MQX_ROOTDIR}/shell/build/bat/shell_twrk64f120m.sh ${MQX_ROOTDIR} ${MQX_ROOTDIR}/lib/twrk64f120m.cmake/debug/shell gcc_arm
+   COMMENT "Copying shell files")

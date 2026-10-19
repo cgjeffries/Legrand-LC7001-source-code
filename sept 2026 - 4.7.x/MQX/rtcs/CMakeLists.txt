@@ -1,0 +1,223 @@
+SET(LIBRARY_NAME rtcs)
+
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/rtcs/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/adc/kadc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/adc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/cm)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/config/twrk64f120m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/dma)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet/macnet)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet/phy)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/enet)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/esdhc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/flashx/freescale)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/flashx)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/can/flexcan)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/gpio/kgpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/gpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/hwtimer)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c/polled)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/i2c/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/bsp/twrk64f120m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/config/common)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/debug)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/io_mem)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/io_null)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pipe)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lpm)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lwadc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/lwgpio)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcb)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcb/mqxa)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pccard)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/pcflash)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/rtc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sai)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sai/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_esdhc)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard/sdcard_spi)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/sdcard)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/serial)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/spi)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/tchres)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/tfs)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/timer)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd/polled)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/io/usb_dcd/int)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/cpu)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/core/M4)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/tad)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mfs/source/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/mqx/source/psp/cortex_m/compiler/gcc_arm/)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/arm-none-eabi/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/lib/gcc/arm-none-eabi/5.2.1/include)
+INCLUDE_DIRECTORIES(${MQX_ROOTDIR}/../tools/toolchain/lib/gcc/arm-none-eabi/5.2.1/include-fixed)
+
+SET(SOURCES
+   ${MQX_ROOTDIR}/rtcs/source/apps/binfile.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/coff.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/dhcpsrv.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/echosrv.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/eds.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpc.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpc_cmd.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpclnt.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpsrv.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpsrv_cmd.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpsrv_cmd_file.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpsrv_cmd_transfer.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpsrv_msg.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpsrv_supp.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/ftpsrv_task.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/httpsrv.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/httpsrv_supp.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/httpsrv_task.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/loadtb.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/loadtc.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/loadts.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/resolver.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/rtcsload.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/rtcs_base64.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/rtcs_smtp.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/sntp.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/sockio.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/srec32.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/srecord.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/telnet.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/telnetio.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/telnsrv.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/tftp.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/tftpacc.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/tftpsrv.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/tftputil.c
+   ${MQX_ROOTDIR}/rtcs/source/apps/dnscln.c
+   ${MQX_ROOTDIR}/rtcs/source/if/arpcmd.c
+   ${MQX_ROOTDIR}/rtcs/source/if/dnshosts.c
+   ${MQX_ROOTDIR}/rtcs/source/if/dnsinit.c
+   ${MQX_ROOTDIR}/rtcs/source/if/dnsutil.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ghbname.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ifadd.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ifbootp.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ifdhcp.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ifdns.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ifppp.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ifrem.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ifstat.c
+   ${MQX_ROOTDIR}/rtcs/source/if/iftraps.c
+   ${MQX_ROOTDIR}/rtcs/source/if/iftunnel.c
+   ${MQX_ROOTDIR}/rtcs/source/if/inet.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ipcfg.c
+   ${MQX_ROOTDIR}/rtcs/source/if/iwcfg.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ping.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcs.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcscmd.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcsdela.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcsglob.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcshost.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcsinit.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcslog0.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcslog1.c
+   ${MQX_ROOTDIR}/rtcs/source/if/rtcsrand.c
+   ${MQX_ROOTDIR}/rtcs/source/if/sdgram.c
+   ${MQX_ROOTDIR}/rtcs/source/if/sockutil.c
+   ${MQX_ROOTDIR}/rtcs/source/if/soigmp.c
+   ${MQX_ROOTDIR}/rtcs/source/if/soip.c
+   ${MQX_ROOTDIR}/rtcs/source/if/solink.c
+   ${MQX_ROOTDIR}/rtcs/source/if/sosel.c
+   ${MQX_ROOTDIR}/rtcs/source/if/sosock.c
+   ${MQX_ROOTDIR}/rtcs/source/if/sotcp.c
+   ${MQX_ROOTDIR}/rtcs/source/if/soudp.c
+   ${MQX_ROOTDIR}/rtcs/source/if/sstream.c
+   ${MQX_ROOTDIR}/rtcs/source/if/getaddrinfo.c
+   ${MQX_ROOTDIR}/rtcs/source/if/getnameinfo.c
+   ${MQX_ROOTDIR}/rtcs/source/if/inet_ntop.c
+   ${MQX_ROOTDIR}/rtcs/source/if/inet_pton.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ipcfg6.c
+   ${MQX_ROOTDIR}/rtcs/source/if/ping6.c
+   ${MQX_ROOTDIR}/rtcs/source/media/arp.c
+   ${MQX_ROOTDIR}/rtcs/source/media/arpinit.c
+   ${MQX_ROOTDIR}/rtcs/source/media/ipcp.c
+   ${MQX_ROOTDIR}/rtcs/source/media/ipcpfsm.c
+   ${MQX_ROOTDIR}/rtcs/source/media/ip-e.c
+   ${MQX_ROOTDIR}/rtcs/source/media/proxyarp.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/alggen.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/dnat.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/ifdnat.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/ifnat.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/nat.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/nat_apply.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/natalg.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/natdata.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/natevent.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/natftp.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/nattftp.c
+   ${MQX_ROOTDIR}/rtcs/source/nat/sonat.c
+   ${MQX_ROOTDIR}/rtcs/source/os/mqx25x/rtcsdate.c
+   ${MQX_ROOTDIR}/rtcs/source/os/mqx25x/rtcsmsec.c
+   ${MQX_ROOTDIR}/rtcs/source/os/mqx25x/rtcsmsg.c
+   ${MQX_ROOTDIR}/rtcs/source/os/mqx25x/rtcspart.c
+   ${MQX_ROOTDIR}/rtcs/source/os/mqx25x/rtcssec.c
+   ${MQX_ROOTDIR}/rtcs/source/os/mqx25x/rtcstask.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/ccp.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/chap.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/gen16.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/genmd5.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/lcp.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/md5.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/md5step.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/pap.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/pktrx.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/pkttx.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/ppp.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/pppfsm.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/pppglob.c
+   ${MQX_ROOTDIR}/rtcs/source/ppp/ppphdlc.c
+   ${MQX_ROOTDIR}/rtcs/source/snmp/1213.c
+   ${MQX_ROOTDIR}/rtcs/source/snmp/mib.c
+   ${MQX_ROOTDIR}/rtcs/source/snmp/mqxmib.c
+   ${MQX_ROOTDIR}/rtcs/source/snmp/snmp.c
+   ${MQX_ROOTDIR}/rtcs/source/snmp/trap_receivers.c
+   ${MQX_ROOTDIR}/rtcs/source/snmp/traps.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/bootcomm.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/bootinit.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/bootp.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/checksum.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/dhcpclnt.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/dhcputil.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/icmp.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/igmp.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/igmputil.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/ip.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/ip_reasm.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/ipif_add.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/ipif_rem.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/iplocal.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/ipradix.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/iproute.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/iptunnel.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/iputil.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/rip.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/route.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/rtcspcb.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/tcp.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/tcp_buf.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/tcp_clos.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/tcp_rcv.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/tcp_send.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/tcpip.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/ticker.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/timer.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/udp.c
+   ${MQX_ROOTDIR}/rtcs/source/tcpip/checksum6.c)
+
+ADD_LIBRARY(${LIBRARY_NAME} STATIC ${SOURCES})
+
+ADD_CUSTOM_COMMAND(TARGET ${LIBRARY_NAME}
+   POST_BUILD
+   COMMAND ${MQX_ROOTDIR}/rtcs/build/bat/rtcs_twrk64f120m.sh ${MQX_ROOTDIR} ${MQX_ROOTDIR}/lib/twrk64f120m.cmake/debug/rtcs gcc_arm
+   COMMENT "Copying rtcs files")
